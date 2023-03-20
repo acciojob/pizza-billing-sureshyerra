@@ -51,7 +51,7 @@ public class Pizza {
 
         getbilladded = false;
 
-        bill = bill+ "Base Price Of The Pizza: "+ basePrice  + "\n";
+        bill =  "Base Price Of The Pizza: "+ basePrice  + "\n";
 
 
     }
@@ -65,7 +65,7 @@ public class Pizza {
         // your code goes here
 
         if(cheesePriceAdded == false){
-            totalPrice+=cheesePrice;
+            this.totalPrice+=cheesePrice;
             cheesePriceAdded = true;
 
 
@@ -75,7 +75,7 @@ public class Pizza {
     public void addExtraToppings(){
         // your code goes here
         if (toppingsAdded == false){
-            totalPrice+=toppings;
+            this.totalPrice+=toppings;
             toppingsAdded = true;
 
 
@@ -85,7 +85,7 @@ public class Pizza {
     public void addTakeaway(){
         // your code goes here
         if(bagPriceAdded == false){
-            totalPrice+= paperBagPrice;
+           this.totalPrice+= paperBagPrice;
             bagPriceAdded = true;
 
         }
