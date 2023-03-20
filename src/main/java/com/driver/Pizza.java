@@ -41,7 +41,7 @@ public class Pizza {
 
         paperBagPrice = 20;
 
-        totalPrice+= basePrice;
+
 
         cheesePriceAdded = false;
 
@@ -50,6 +50,7 @@ public class Pizza {
          toppingsAdded = false;
 
         getbilladded = false;
+        totalPrice = basePrice;
 
         bill =  "Base Price Of The Pizza: "+ basePrice  + "\n";
 
@@ -97,16 +98,16 @@ public class Pizza {
         if (getbilladded == false) {
 
             if(cheesePriceAdded == true){
-                bill = bill + "Extra Cheese Added : "+cheesePrice + "\n";
+                bill = bill + "Extra Cheese Added: "+cheesePrice + "\n";
             }
             if (toppingsAdded == true){
-                bill = bill + "Extra Toppings Added : "+toppings + "\n";
+                bill = bill + "Extra Toppings Added: "+toppings + "\n";
             }
             if (bagPriceAdded == true){
-                bill = bill +  "Paperbag Added :" + paperBagPrice + "\n";
+                bill = bill +  "Paperbag Added: " + paperBagPrice + "\n";
             }
 
-            bill = bill + "Total Price :" + totalPrice + "\n";
+            bill = bill + "Total Price: " + totalPrice + "\n";
             getbilladded = true;
 
 
